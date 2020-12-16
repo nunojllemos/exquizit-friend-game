@@ -1,0 +1,76 @@
+.navigation-container
+  width: 1000px
+  margin: 0 auto
+  @include flex(center, space-between)
+
+.logo
+  @include flex()
+
+.logo--image
+  width: 70px
+  height: 70px
+  border-radius: 50%
+  background-color: $green
+  @include flex()
+
+.logo--text
+  margin-left: 12px
+  color: $green
+
+.logo--text--title
+  font-size: 3rem
+  font-weight: $regular
+
+.logo--text--title--span
+  font-size: 3rem
+  font-weight: $bold
+  text-transform: uppercase
+
+.logo--text--subtitle
+  font-size: 1.4rem
+  font-weight: $regular
+  letter-spacing: 3.5px
+
+.navigation-links
+  @include flex()
+
+.navigation-links--item
+  cursor: pointer
+  padding: 1rem 2rem
+  border-bottom: 1px solid $blue
+  transition: border-bottom 0.15s
+
+.navigation-links--item:hover
+  border-bottom: 1px solid $green
+
+.navigation-links--item:last-child
+  cursor: pointer
+  padding: 0
+  width: 100px
+  height: 40px
+  background-color: $green
+  border: 1.5px solid $green
+  border-radius: 20px
+  margin-left: 20px
+  transition: background-color 0.15s
+  @include flex()
+
+.navigation-links--item:last-child:hover
+  background-color: $blue
+
+.navigation-links--item:last-child:hover > .play
+  color: $green
+
+.navigation-links--link
+  font-size: 1.8rem
+  color: $green
+  letter-spacing: 1.5px
+  font-weight: $regular
+  text-decoration: none
+
+.play
+  color: $blue
+  font-size: 1.6rem
+  font-weight: $medium
+  text-transform: uppercase
+  transition: color 0.15s

@@ -1,0 +1,32 @@
+body
+  background-color: $green
+
+nav
+  background-color: $blue
+  display: flex
+  align-items: center
+  height: 90px
+  width: 100%
+
+main
+  max-width: 1000px
+  margin: 0 auto
+  min-height: calc(100vh - 160px)
+  @include flex(center, space-between)
+
+footer
+  width: 100%
+  margin: 0 auto
+  background-color: $lightGreen
+  display: flex
+  align-items: center
+  height: 70px
+
+.btn
+  height: 50px
+  padding: 0 3rem
+  border: none
+  border-radius: 25px
+
+.bold
+  font-weight: $medium

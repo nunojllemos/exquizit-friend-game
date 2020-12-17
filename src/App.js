@@ -2,6 +2,7 @@ import "./style/css/main.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // components
 import Home from "./components/Home/Home";
+import Rules from "./components/Rules/Rules";
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
 
@@ -11,11 +12,14 @@ function App() {
 			<nav>
 				<Navigation />
 			</nav>
-			<Route path='/'>
-				<main>
+			<main>
+				<Route exact path='/'>
 					<Home />
-				</main>
-			</Route>
+				</Route>
+				<Route path='/rules'>
+					<Rules />
+				</Route>
+			</main>
 			<footer>
 				<Footer />
 			</footer>

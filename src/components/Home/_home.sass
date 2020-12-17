@@ -1,6 +1,8 @@
 .text-wrapper
   width: 45%
   padding: 0 1.5rem
+  position: relative
+  animation: from-left 0.25s
 
 .title
   font-weight: $bold
@@ -15,7 +17,7 @@
 .title--hashes span
   font-size: 1.6rem
   color: $blue
-  margin-bottom: 90px
+  margin-bottom: 55px
 
 .text-wrapper--subtitle
   color: $blue
@@ -34,12 +36,14 @@
   color: $green
   text-transform: uppercase
   font-size: 1.6rem
+  font-weight: $medium
   letter-spacing: 2px
   cursor: pointer
   transition: background-color 0.15s, color 0.15s
 
 .button-play-now:hover
   background-color: $green
+  font-weight: $medium
   color: $blue
 
 .image-wrapper
@@ -49,3 +53,5 @@
   background-size: 100%
   background-position: center
   background-repeat: no-repeat
+  position: relative
+  animation: from-top 0.25s

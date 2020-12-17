@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap");
+@keyframes from-left {
+  0% {
+    left: -10px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes from-top {
+  0% {
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +74,8 @@ footer {
 .text-wrapper {
   width: 45%;
   padding: 0 1.5rem;
+  position: relative;
+  animation: from-left 0.25s;
 }
 
 .title {
@@ -69,7 +93,7 @@ footer {
 .title--hashes span {
   font-size: 1.6rem;
   color: #05386B;
-  margin-bottom: 90px;
+  margin-bottom: 55px;
 }
 
 .text-wrapper--subtitle {
@@ -92,6 +116,7 @@ footer {
   color: #5CDB95;
   text-transform: uppercase;
   font-size: 1.6rem;
+  font-weight: 500;
   letter-spacing: 2px;
   cursor: pointer;
   transition: background-color 0.15s, color 0.15s;
@@ -99,6 +124,7 @@ footer {
 
 .button-play-now:hover {
   background-color: #5CDB95;
+  font-weight: 500;
   color: #05386B;
 }
 
@@ -109,6 +135,8 @@ footer {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  animation: from-top 0.25s;
 }
 
 .navigation-container {
@@ -211,6 +239,58 @@ footer {
   font-weight: 500;
   text-transform: uppercase;
   transition: color 0.15s;
+}
+
+.rules-text-wrapper {
+  width: 50%;
+  padding: 0 20px;
+  position: relative;
+  animation: from-left 0.25s;
+}
+
+.rule-title {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.rule-title,
+.rule-title,
+.rule-title-jk {
+  color: #05386B;
+  font-weight: 500;
+  font-size: 3.6rem;
+}
+
+.upper-text {
+  position: relative;
+  top: -15px;
+}
+
+.rule-title .rule-title--unbold {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+.rule-title .bold {
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+.rule-title-jk {
+  margin-bottom: 60px;
+}
+
+.rules-text p,
+.rules-text p .bold {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #05386B;
+  line-height: 30px;
+}
+
+.rules-image-wrapper {
+  position: relative;
+  animation: from-top 0.25s;
 }
 
 .footer-container {

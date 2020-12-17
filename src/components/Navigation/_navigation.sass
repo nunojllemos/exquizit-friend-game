@@ -36,12 +36,7 @@
 
 .navigation-links--item
   cursor: pointer
-  padding: 1rem 2rem
   border-bottom: 1px solid $blue
-  transition: border-bottom 0.15s
-
-.navigation-links--item:hover
-  border-bottom: 1px solid $green
 
 .navigation-links--item:last-child
   cursor: pointer
@@ -62,11 +57,19 @@
   color: $green
 
 .navigation-links--link
+  padding: 1rem 2rem
   font-size: 1.8rem
   color: $green
   letter-spacing: 1.5px
   font-weight: $regular
   text-decoration: none
+  transition: border-bottom 1s
+
+.navigation-links--link:hover
+  border-bottom: 1px solid $green
+
+.play:hover
+  border: none
 
 .play
   color: $blue

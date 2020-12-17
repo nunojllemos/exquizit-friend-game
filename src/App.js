@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Rules from "./components/Rules/Rules";
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
+import Menu from "./components/Menu/Menu";
 
 function App() {
 	let content = (
@@ -15,6 +16,9 @@ function App() {
 			<main>
 				<Route exact path='/'>
 					<Home />
+				</Route>
+				<Route path='/menu'>
+					<Menu />
 				</Route>
 				<Route path='/rules'>
 					<Rules />

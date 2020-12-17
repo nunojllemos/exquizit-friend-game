@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 	let content = (
@@ -19,14 +20,16 @@ const Home = () => {
 				<div className='text-wrapper--subtitle'>
 					<p className='text-wrapper--subtitle--first-paragraph'>
 						Meet your friends using some videoconference app and measure your
-						general knowledge in this healhy and competitive ex
+						general knowledge in this healthy and competitive ex
 						<span className='bold'>QUIZ</span>it friendly game.
 					</p>
 					<p className='text-wrapper--subtitle--second-paragraph'>
 						Create your own questions and invite your own friends.
 					</p>
 
-					<button className='btn button-play-now'>play now</button>
+					<Link to='/menu'>
+						<button className='btn button-play-now'>play now</button>
+					</Link>
 				</div>
 			</div>
 			<div className='image-wrapper'></div>
